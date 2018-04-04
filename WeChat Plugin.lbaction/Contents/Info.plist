@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleIconFile</key>
+	<string>WeChat.png</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.jayqizone.LaunchBar.action.WeChatPlugin</string>
+	<key>CFBundleName</key>
+	<string>WeChat Plugin</string>
+	<key>LBAbbreviation</key>
+	<string>WX</string>
+	<key>LBDescription</key>
+	<dict>
+		<key>LBAuthor</key>
+		<string>JayQi</string>
+		<key>LBEmail</key>
+		<string>jayqizone@gmail.com</string>
+		<key>LBTwitter</key>
+		<string>@jayqizone</string>
+		<key>LBWebsiteURL</key>
+		<string></string>
+	</dict>
+	<key>LBScripts</key>
+	<dict>
+		<key>LBDefaultScript</key>
+		<dict>
+			<key>LBAcceptedArgumentTypes</key>
+			<array>
+				<string>string</string>
+			</array>
+			<key>LBKeepWindowActive</key>
+			<true/>
+			<key>LBLiveFeedbackEnabled</key>
+			<true/>
+			<key>LBRequiresArgument</key>
+			<true/>
+			<key>LBResultType</key>
+			<string>unknown</string>
+			<key>LBReturnsResult</key>
+			<true/>
+			<key>LBScriptName</key>
+			<string>default.js</string>
+		</dict>
+	</dict>
+	<key>LBTextInputTitle</key>
+	<string>默认打开聊天窗口，发送消息用分号分隔</string>
+</dict>
+</plist>
