@@ -37,7 +37,7 @@ function run(argument) {
     }
 
     response.data.forEach(e => {
-        result.push({ title: e.title, subtitle: e.subTitle, icon: e.icon, badge: e.userId, action: 'action', actionArgument: { userId: e.userId, content: content } })
+        result.push({ title: e.title, subtitle: e.subTitle, icon: e.icon, action: 'action', actionArgument: { userId: e.userId, content: content } })
     });
 
     return result;
