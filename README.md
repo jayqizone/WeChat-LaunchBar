@@ -1,6 +1,6 @@
 # WeChat Action for LaunchBar
 
-![platform](https://img.shields.io/badge/platform-macos-lightgrey.svg) ![language](https://img.shields.io/badge/language-javascript-orange.svg) [![GitHub license](https://img.shields.io/github/license/jayqizone/WeChat-LaunchBar.svg)](https://github.com/jayqizone/WeChat-LaunchBar/blob/master/LICENSE)
+![platform](https://img.shields.io/badge/platform-macos-lightgrey.svg) ![language](https://img.shields.io/badge/language-javascript-yellow.svg) [![GitHub license](https://img.shields.io/github/license/jayqizone/WeChat-LaunchBar.svg)](https://github.com/jayqizone/WeChat-LaunchBar/blob/master/LICENSE)
 
 感谢 [TKkk-iOSer](https://github.com/TKkk-iOSer)，请先安装 [WeChatPlugin-MacOS](https://github.com/TKkk-iOSer/WeChatPlugin-MacOS) 插件
 
