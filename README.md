@@ -4,6 +4,10 @@
 
 感谢 [TKkk-iOSer](https://github.com/TKkk-iOSer)，请先安装 [WeChatPlugin-MacOS](https://github.com/TKkk-iOSer/WeChatPlugin-MacOS) 微信小助手插件
 
+## 演示
+
+![](https://raw.githubusercontent.com/jayqizone/WeChat-LaunchBar/master/images/demo.gif)
+
 ## 用法
 
 - 克隆或下载本项目，双击安装 WeChat Plugin.lbaction
