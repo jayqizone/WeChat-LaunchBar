@@ -1,7 +1,8 @@
 // LaunchBar Action Script
 let baseUrl = 'http://127.0.0.1:52700/wechat-plugin/';
-let tmp = '~/.wechat-plugin.tmp';
 let timeout = 1;
+let tmp = '~/.wechat-plugin.tmp';
+let lock = '~/.wechat-plugin.lock';
 
 function run(argument) {
     let index_en = argument.indexOf(';');
@@ -41,6 +42,17 @@ function run(argument) {
         }
 
         if (response) {
+            let current;
+            let lockTime;
+            while (File.exists(lock)) {
+                current = Date.now() / 1000;
+                lockTime = LaunchBar.execute('/usr/bin/stat', '-f', '%m', lock.replace('~', LaunchBar.homeDirectory));
+                if (current - lockTime > 2 * timeout) {
+                    break;
+                }
+            }
+            File.writeText('', lock);
+
             try {
                 response = HTTP.getJSON(baseUrl + 'user?keyword=' + encodeURIComponent(keyword), { timeout: timeout });
                 if (response) {
@@ -56,6 +68,8 @@ function run(argument) {
             catch (e) {
                 LaunchBar.alert(e);
             }
+
+            File.exists(lock) && LaunchBar.execute('/bin/rm', lock.replace('~', LaunchBar.homeDirectory));
         }
     }
 
